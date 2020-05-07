@@ -7,8 +7,8 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    BRANDS.collect do |unique|
-      if unique == unique
+    BRANDS.each_with_index do |unique, index|
+      if unique == unique[index]
       BRANDS << unique
     end
   end
