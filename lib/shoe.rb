@@ -8,7 +8,9 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    binding.pry
+    BRANDS.collect do |unique|
+      if unique == unique
+        
     BRANDS.uniq
   end
 
