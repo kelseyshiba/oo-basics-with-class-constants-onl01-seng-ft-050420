@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     brand.collect do |unique|
-      if unique !== unique 
+      if unique != unique 
       BRANDS << brand
     end
   end
