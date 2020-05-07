@@ -9,7 +9,7 @@ class Shoe
     @brand = brand
     BRANDS.collect do |unique|
       if unique == unique
-      BRANDS << brand
+      BRANDS << unique
     end
   end
   end
